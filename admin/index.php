@@ -73,7 +73,7 @@ require "../HEADER.php";
             echo "<div id='rowOrder' class='rowOrderForADMIN'>";
             //здесь убрать data-bs, если нужно будет вернуться + добавить тег a href='createJew.php'
             echo "<form action='index.php' method='get' id='formSearch'>";
-            echo "<input name='search' type='text'>";
+            echo "<input name='search' type='text' value='$search'>";
             echo "<input type='hidden' value='$sort' name='sort'>";
             echo "<input type='hidden' value='$filter' name='filter'>";
             echo "<input type='submit' value='Искать' id='buttonSearch'>";
@@ -84,18 +84,21 @@ require "../HEADER.php";
             echo "<div id='rowOrder' class='rowOrderForADMIN'>";
             echo "<form action='index.php' method='get' id='formSort'>";
             echo "<div style='font-size:1vmax;'>Сортировать по:</div>";
-            echo "<select name='sort'>
+            echo "<select name='sort'>"; ?>
                      <option value=''>без сортировки</option>
-                     <option value='jew_name ASC'>названию (а-я)</option>
-                     <option value='jew_name DESC'>названию (я-а)</option>
-                     <option value='jew_price ASC'>цене (по возрастанию)</option>
-                     <option value='jew_cat DESC'>цене (по убыванию)</option>
-                  </select>";
+                     <option value='jew_name ASC' <?=($sort and $sort == "jew_name ASC") ? "selected" : "";?>>названию (а-я)</option>
+                     <option value='jew_name DESC' <?=($sort and $sort == "jew_name DESC") ? "selected" : "";?>>названию (я-а)</option>
+                     <option value='jew_price ASC' <?=($sort and $sort == "jew_price ASC") ? "selected" : "";?>>цене (по возрастанию)</option>
+                     <option value='jew_price DESC' <?=($sort and $sort == "jew_price DESC") ? "selected" : "";?>>цене (по убыванию)</option>
+            <?php 
+            echo "</select>";
             echo "<div></div>";
             echo "<div style='font-size:1vmax;'>Показывать категории:</div>";
             echo "<select name='filter'>
                      <option value=''>все</option>";
-                    foreach ($queryCategories as $fi_cat) { echo "<option value='$fi_cat[0]'>$fi_cat[1]</option>";}
+                    foreach ($queryCategories as $fi_cat) { 
+                    if ($fi_cat[0]==$filter) {echo "<option value='$fi_cat[0]' selected>$fi_cat[1]</option>";}
+                    else {echo "<option value='$fi_cat[0]'>$fi_cat[1]</option>";} }
             echo "</select>";
             echo "<div></div>";
             echo "<input type='hidden' value='$search' name='search'>";
@@ -146,32 +149,38 @@ require "../HEADER.php";
             echo "<div id='rowOrder' class='rowOrderForADMIN'>";
             //здесь убрать data-bs, если нужно будет вернуться + добавить тег a href='createJew.php'
             echo "<form action='index.php' method='get' id='formSearch'>";
-            echo "<input name='search' type='text'>";
+            echo "<input name='search' type='text' value='$search'>";
+            echo "<input type='hidden' value='$sort' name='sort'>";
+            echo "<input type='hidden' value='$filter' name='filter'>";
             echo "<input type='submit' value='Искать' id='buttonSearch'>";
             echo "</form>";
             echo "<div id='buttonCreateJew' data-bs-toggle='modal' data-bs-target='#exampleModal'>Добавить новый товар</div>";
-             echo "</div>";
-             echo "<div id='rowOrder' class='rowOrderForADMIN'>";
-             echo "<form action='index.php' method='get' id='formSort'>";
-             echo "<div style='font-size:1vmax;'>Сортировать по:</div>";
-             echo "<select name='sort'>
-                      <option value=''>без сортировки</option>
-                      <option value='jew_name ASC'>названию (а-я)</option>
-                      <option value='jew_name DESC'>названию (я-а)</option>
-                      <option value='jew_price ASC'>цене (по возрастанию)</option>
-                      <option value='jew_cat DESC'>цене (по убыванию)</option>
-                   </select>";
-             echo "<div></div>";
-             echo "<div style='font-size:1vmax;'>Показывать категории:</div>";
-             echo "<select name='filter'>
-                      <option value=''>все</option>";
-                     foreach ($queryCategories as $fi_cat) { echo "<option value='$fi_cat[0]'>$fi_cat[1]</option>";}
-             echo "</select>";
-             echo "<div></div>";
-             echo "<input type='hidden' value='$search' name='search'>";
-             echo "<input type='submit' value='Отправить'>";
-             echo "</form>";
-             echo "</div>";
+            echo "</div>";
+
+            echo "<div id='rowOrder' class='rowOrderForADMIN'>";
+            echo "<form action='index.php' method='get' id='formSort'>";
+            echo "<div style='font-size:1vmax;'>Сортировать по:</div>";
+            echo "<select name='sort'>"; ?>
+                     <option value=''>без сортировки</option>
+                     <option value='jew_name ASC' <?=($sort and $sort == "jew_name ASC") ? "selected" : "";?>>названию (а-я)</option>
+                     <option value='jew_name DESC' <?=($sort and $sort == "jew_name DESC") ? "selected" : "";?>>названию (я-а)</option>
+                     <option value='jew_price ASC' <?=($sort and $sort == "jew_price ASC") ? "selected" : "";?>>цене (по возрастанию)</option>
+                     <option value='jew_price DESC' <?=($sort and $sort == "jew_price DESC") ? "selected" : "";?>>цене (по убыванию)</option>
+            <?php 
+            echo "</select>";
+            echo "<div></div>";
+            echo "<div style='font-size:1vmax;'>Показывать категории:</div>";
+            echo "<select name='filter'>
+                     <option value=''>все</option>";
+                    foreach ($queryCategories as $fi_cat) { 
+                    if ($fi_cat[0]==$filter) {echo "<option value='$fi_cat[0]' selected>$fi_cat[1]</option>";}
+                    else {echo "<option value='$fi_cat[0]'>$fi_cat[1]</option>";} }
+            echo "</select>";
+            echo "<div></div>";
+            echo "<input type='hidden' value='$search' name='search'>";
+            echo "<input type='submit' value='Отправить'>";
+            echo "</form>";
+            echo "</div>";
              echo "<p id='empty'>Пока пусто..</p>";
         }
     ?>

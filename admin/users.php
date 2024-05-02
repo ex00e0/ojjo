@@ -27,8 +27,9 @@ require "../HEADER.php";
          $i = count($queryJewAdm)+2;
          echo "<script> let numRows = document.getElementById('orderContent');
                                numRows.style.gridTemplateRows='repeat($i,4vmax) 1fr'; </script>";
-                               function date_new($date_old) {$date = date("d.m.Y", strtotime($date_old));
-                                return substr($date, 0, 2).".".substr($date, 3,2).".".substr($date, 6);}
+                               function date_new($date_old) {if ($date_old!='') {
+                                $date = date("d.m.Y", strtotime($date_old));
+                                return substr($date, 0, 2).".".substr($date, 3,2).".".substr($date, 6);} }
                                 echo "<div id='rowOrder' class='rowOrderForADMIN'>";
                                 //здесь убрать data-bs, если нужно будет вернуться + добавить тег a href='createJew.php'
                                 echo "<form action='users.php' method='get' id='formSearch'>";
