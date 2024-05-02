@@ -1,0 +1,739 @@
+* {margin:0;
+    padding:0;
+    font-size: 100%;}
+body {background-color: #F9F9F9;
+      display:grid;}
+@font-face {font-family: "Gilroy";
+            src: url("Gilroy-Regular.woff");}
+@font-face {font-family: "Gilroy M";
+            src: url("Gilroy-Medium.woff");}
+@font-face {font-family: "Gilroy SB";
+            src: url("Gilroy-SemiBold.woff");}
+@font-face {font-family: "Noto Serif B";
+            src: url("NotoSerif-Bold.woff");}
+#wrapper1 {display: grid;
+           background-color: #333333;
+            height: 5.75vmax;
+            grid-template-rows: 100%;
+            grid-template-columns: 21% auto 21%;}
+
+            #wrapper1FOROPPO {display: grid;
+               height: 49vmax;
+               background-image: url("bgc.png");
+               background-size: cover;
+               grid-template-rows: 10% 53% 10% 6% 7.9% 0.2% auto;
+               grid-template-columns: 21% auto 21%;}
+#blockA {display: grid;
+         grid-row:1;
+         grid-column:2;
+         align-items: center;
+            grid-template-rows: 100%;
+            grid-template-columns: 12% 11% 17% 20% 8.5% 1.75% 1.75% 7% 15% 1.75% 2.25% 1fr 0.25%;}
+#a1, #a2, #a3, #a6, #a7 {font-family: "Gilroy";
+               font-size: 0.75vmax;
+               color: white;}
+#a4 {width:100%;}
+#a5 {width:100%;
+    grid-column: 6;}
+#a6 {grid-column:8;}
+#a7 {grid-column:9;}
+#a8 {width:100%;
+     grid-column:10;}
+#a9 {width:100%;
+     grid-column:12;}
+a {text-decoration: none;}
+#blockA a {color:white;}
+#no1 {grid-row:3;
+     text-align: center;
+     color:white;
+     font-family: "Noto Serif B";
+     font-size:1.9vmax;
+    grid-column:1/span all;}
+#no2 {grid-row:4;
+      height:100%;
+      width:14%;
+      font-family: "Gilroy M";
+      font-size:1vmax;
+      border:0.15vmax solid white;
+      background-color: #333333;
+      color:white;
+    grid-column:1/span all;
+     justify-self:center;}
+#b0 {height:100%;
+     width:100%;
+     background-color: white;
+    grid-row:6;
+    grid-column:1/span all;}
+#wrapper2 {display: grid;
+            height: 11.5vmax;
+            grid-template-rows: 40% 1fr 40%;
+            grid-template-columns: 21% auto 21%;}
+#blockB {grid-row:2;
+        grid-column:2;
+        display:grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 100%;
+        column-gap:2.5%;}
+#blockB select {outline: none;
+                color:#333333;
+                border: none;
+                background: transparent;
+                border-bottom: 0.1vmax solid #D6D6D6;
+                font-size:0.8vmax;
+                font-family:"Gilroy";}
+                #blockBFOROPPO {grid-column:2;
+                    grid-row:7;
+                    display:grid;
+                    height:100%;
+                    grid-template-columns: 1fr 2.5% 1fr 2.5% 1fr 2.5% 1fr 2.5% 1fr 2.5% 1fr;
+                    grid-template-rows: 100%;}
+
+                    .b1 {width:100%;
+                         align-self:center;}
+                    .b2 {width:5%;
+                         justify-self: center;
+                         background-color: white;
+                         align-self:center;
+                         height:50%;}
+.wrapperType3Products {display: grid;
+                    height: 19vmax;
+                    justify-items: center;
+                    grid-template-rows: 60% 8% 10% 12% 1fr;
+                    grid-template-columns: 23% 1fr 5% 1fr 5% 1fr 23%;}
+.productRow1 {width:100%;
+              height:100%;
+              grid-row:1;}
+.productRow2 {grid-row:3;
+              color:#333333;
+              font-size:0.8vmax;
+              font-family:"Gilroy";}
+.productRow3 {grid-row:4;
+              color:#333333;
+              font-size:1.2vmax;
+              font-family:"Gilroy SB";}
+.productRow4 {grid-row:5;
+              border:none;
+              background-color: #333333;
+              width:45%;
+              height:100%;
+              color:white;
+              text-align:center;
+              line-height:200%;
+              font-size:0.95vmax;
+              font-family:"Gilroy";}
+.column1 {grid-column:2;}
+.column2 {grid-column:4;}
+.column3 {grid-column:6;}
+.voidCat {height:5vmax;}
+.lineCat {height:0.1vmax;
+          display:grid;
+          grid-template-rows: 100%;
+          grid-template-columns: 21% 1fr 21%;}
+.lineCat div {grid-column:2;
+              background-color: #D6D6D6;}
+.buttonCat {height:2.5vmax;
+           width:12%; 
+           justify-self:center;
+           color:white;
+              font-size:1.05vmax;
+              font-family:"Gilroy";
+           background-color: #333333;}
+#wrapperLorem {height:30.5vmax;
+               display:grid;
+               grid-template-columns: 26% 28% 5% 6% 2.25% 1fr 26%;
+               grid-template-rows: 21% 4% 24% 28% 1fr;}
+#wrapperLoremFORTOVAR {height:30.5vmax;
+     display:grid;
+     grid-template-columns: 26% 28% 5% 6% 2.25% 1fr 26%;
+     grid-template-rows: 17% 4% 24% 28% 19% 1fr;}
+#lorem1 {color:#333333;
+         font-size:0.8vmax;
+         grid-row:3/5;
+         grid-column:2;
+         line-height:1.25vmax;
+        font-family:"Gilroy";}
+#loremGrad {grid-row:3/5;
+            grid-column: 2;
+            height:70%;
+            background-image: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,255,0.513217787114846) 47%, rgba(255,255,255,1) 100%);}
+#lorem2 {align-self:center;
+         color:#333333;
+         width:max-content;
+         grid-row:4;
+         grid-column:2;
+         border-bottom: 0.1vmax dashed #333333;
+         font-size:1.05vmax;
+        font-family:"Gilroy M";}
+#lorem3 {grid-row:2/4;
+         grid-column:4;
+         display:grid;
+         text-align: center;
+         justify-items: center;
+         grid-template-columns: 100%;
+         grid-template-rows: 65% 1fr;}
+#lorem4 {grid-row:2/4;
+         grid-column:6;
+         display:grid;
+         text-align: center;
+         justify-items: center;
+         grid-template-columns: 100%;
+         grid-template-rows: 65% 1fr;}
+#lorem5 {grid-row:4;
+         grid-column:4;
+         display:grid;
+         text-align: center;
+         justify-items: center;
+         grid-template-columns: 100%;
+         grid-template-rows: 65% 1fr;}
+#lorem6 {grid-row:4;
+         grid-column:6;
+         display:grid;
+         text-align: center;
+         justify-items: center;
+         grid-template-columns: 100%;
+         grid-template-rows: 65% 1fr;}
+#lorem3 svg {align-self: center;
+             width:65%;}
+#lorem4 svg {align-self: center;
+             width:45%;}
+#lorem5 svg {align-self: center;
+             width:65%;}
+#lorem6 svg {align-self: center;
+             width:55%;}
+.loremTextForIcon {grid-row:2;
+                   color:black;
+                   line-height: 1.2vmax;
+                   font-size: 0.8vmax;
+                   font-family: "Gilroy";}
+
+
+#wrapper6 {display: grid;
+            height: 25vmax;
+            background-image: url("fonn.png");
+            background-size: cover;
+            grid-template-rows: 22% 9.5% 19% 8.3% 8.3% 8.3% 1fr;
+            grid-template-columns: 29% 2% 15% 23.5% auto;}
+#g1 {font-family:"Gilroy";
+    font-size:1.1vmax;
+    color:white;
+    grid-row:2;
+    text-align:center;
+    grid-column:1/span all;}
+#g2 {font-family:"Noto Serif B";
+    font-size:1.5vmax;
+    color:white;
+    grid-row:3;
+    text-align:center;
+    grid-column:1/span all;}
+#g3, #g4, #g5 {grid-column:2;
+               width:50%;
+               align-self: center;}
+#g3 {grid-row:4;}
+#g4 {grid-row:5;}
+#g5 {grid-row:6;}
+#g6, #g7, #g8 {grid-column:3;
+              align-self:center;
+              color:white;
+              font-family:"Gilroy";
+              font-size:0.95vmax;}
+#g6 {grid-row:4;}
+#g7 {grid-row:5;}
+#g8 {grid-row:6;}
+#g9 {grid-row:4/7;
+    border:0.1vmax solid white;
+     grid-column:4;
+     display: grid;}
+#blockG9 {justify-self: center;
+         align-self:center;
+         background-color: white;
+         width:93%;
+         height:70%;
+         display:grid;
+         grid-template-rows:100%;
+         grid-template-columns: 5% 48% 3.5% 1fr 6%;}
+#g91 {grid-column:2;
+      border: 0.1vmax solid #d6d6d6;
+      color:rgba(51,51,51,0.5);
+      height:50%;
+      align-self:center;
+      padding-left: 7%;
+      font-family: "Gilroy M";
+      font-size:0.8vmax;
+      letter-spacing: 0.05vmax;}
+input {outline: none;}
+#g92 {font-family:"Gilroy M";
+      letter-spacing: 0.05vmax;
+           font-size:0.8vmax;
+           letter-spacing: 200%;
+           color:white;
+           border:none;
+           grid-column:4;
+           align-self:center;
+           height:50%;
+           width:100%;
+           justify-self: center;
+           background-color: #333333;}
+#wrapper7 {display: grid;
+            height: 20vmax;
+            grid-template-rows: 20% 7.5% 0.2% 9% 1fr 0.2% 15%;
+            grid-template-columns: 21% 1fr 1.5% 1fr 1.5% 1fr 1.5% 1fr 21%;}
+#h1, #h5 {grid-column: 2;}
+#h2, #h6 {grid-column: 4;}
+#h3, #h7 {grid-column: 6;}
+#h4, #h8 {grid-column: 8;}
+#h1, #h2, #h3, #h4 {font-family:"Gilroy M";
+           font-size:0.95vmax;
+           grid-row:2;
+           color:#333333;}
+#h5, #h6, #h7, #h8 {grid-row:3;
+           width:100%;
+           height:100%;
+           background-color:#333333;}
+#h9 {display:grid;
+     grid-row:5;
+     grid-column:2;
+     grid-template-columns: 100%;
+     color:#333333;
+    font-size:0.7vmax;
+    font-family: "Gilroy";
+     grid-template-rows: 1fr 1fr 1fr 1fr 22%;}
+#h10 {display:grid;
+     grid-row:5;
+     grid-column:4;
+     grid-template-columns: 20% 5% 20% 1fr;
+     color:#333333;
+    font-size:0.7vmax;
+    line-height:1.1vmax;
+    font-family: "Gilroy";
+     grid-template-rows: 43% 1fr;}
+#h101 {grid-row:1;
+       grid-column:1/span all;}
+#h102 {grid-row:2;
+       grid-column:1;
+       width:100%;}
+#h103 {grid-row:2;
+       grid-column:3;
+       width:100%;}
+#h11 {display:grid;
+     grid-row:5;
+     grid-column:6;
+     align-items: center;
+     grid-template-columns: 15% 1fr;
+     color:#333333;
+    font-size:0.7vmax;
+    font-family: "Gilroy";
+     grid-template-rows: repeat(3,17%) 1fr;}
+#h11 svg {width:50%;}
+#h12 {display:grid;
+     grid-row:5;
+     grid-column:8;
+     grid-template-columns: 10% 8% 10% 10.5% 4.5% 11% 8.5% 10% 6% 1fr;
+     color:#333333;
+    font-size:0.7vmax;
+    line-height:1.1vmax;
+    font-family: "Gilroy";
+     grid-template-rows: 43% 15% 1fr;}
+#h12 svg {width:100%;
+         align-self:center;}
+#h120 {grid-column:1/span all;
+      grid-row:1;}
+#h121 {grid-column:1;}
+#h122 {grid-column:3;}
+#h123 {grid-column:5;}
+#h124 {grid-column:7;}
+#h125 {grid-column:9;}
+#h13 {grid-row:6;
+     height:100%;
+     grid-column:2/9;
+     width:100%;
+     background-color:#333333;}
+#h14 {grid-column:2/9;
+     grid-row:7;
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+     color:#333333;
+    font-size:0.8vmax;}
+#h14 div:not(#h14Sp) {font-family:"Gilroy";}
+#h14Sp {font-family:"Gilroy SB";
+        text-decoration: underline;}
+
+        section:not(.inputSet){
+display: flex;
+align-self: center;
+align-items: center;
+justify-content: center;
+transition: all 1s ease-in;
+position: fixed;
+left: 50vmax;
+top: -50vmax;
+transform: translate(-50%,-50%);
+width: 50vmax;
+height: 22vmax;
+background-color: #333333;
+}
+#background{
+position: fixed;
+visibility: hidden;
+background-color: #3333337d;
+width: 100%;
+height: 100%;
+
+}
+.christ{
+position: absolute;
+right: 1vmax;
+top: 0vmax;
+transition: transform 0.7s ease-in-out;
+}
+.christ:hover{
+transform: rotate(180deg);
+}
+form:not(.formSub, .rowOrderForADMIN, #blockB, #createJewForm, .rowOrderFORCATEGORY, #formSearch, #formSort){
+display: flex;
+flex-direction: column;
+position: relative;
+/* align-items: center; */
+justify-content: space-around;
+width: 45vmax;
+height: 19vmax;
+}
+form input, form div:not(.coffee), form p {align-self:center;}
+label:not(.labelAcc){
+display: flex;
+flex-direction: row;
+font-family: 'Gilroy M';
+align-items: center;
+font-size: 1vmax;
+width: 30vmax;
+justify-content:space-between;
+}
+input[type=text]:not(#g91), input[type=password]{
+width: 27vmax;
+height: 1.2vmax;
+padding-left: 1vmax;
+}
+#headerForm{
+font-family: 'Noto Serif B';
+color: white;
+font-size: 1.4vmax;
+}
+
+#btns{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+font-family: 'Gilroy';
+color: white;
+font-size: 1vmax;
+width: 30vmax;
+height: 1.6vmax;
+}
+#toSignIn{
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+width: 11vmax;
+height: 1.6vmax;
+border: 0.05vmax solid white;
+}
+#toLogIn{
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+width: 6vmax;
+height: 1.6vmax;
+border: 0.05vmax solid white;
+}
+#btns>input{
+border: 0.05vmax solid white;
+background-color: transparent;
+font-family: 'Gilroy';
+color: white;
+height: 1.6vmax;
+padding: 0 0.5vmax;
+font-size: 1vmax;
+}
+.label {
+position: absolute;
+top:1.6vmax;
+width:1vmax;
+color: #333333;
+                padding-left: 1vmax;
+                transition : 0.5s ease-in-out;}
+.forLabel{
+     position: relative;
+     display:flex;
+     flex-direction:column;
+     justify-content:end;
+     height:3vmax;
+ }
+ .input {width:100%;}
+ .coffee {height:0.1vmax;
+          line-height:0.1vmax;
+          color:red;
+          padding-left:8.23vmax;
+          font-family: 'Gilroy';
+          font-size: 1vmax;
+          display:none;}
+
+
+
+
+          .voidCart {height:2vmax;}
+          .headlineCart {font-family: 'Gilroy SB';
+              color: #333333;
+              grid-column:2;
+              font-size: 2vmax;}
+          .gridGrid {display: grid;
+                              grid-template-rows: 100%;
+                              grid-template-columns: 21% auto 21%;}
+          .navCart {width:100%;
+                    height:30vmax;
+                    display:grid;
+                    grid-template-rows:100%;
+                    grid-template-columns:5vmax 15vmax 58% auto;}
+                    .navCartSpUsers {width:100%;
+                         display:grid;
+                         grid-template-rows:100%;
+                         grid-template-columns:5vmax 15vmax 58% auto;}
+          #navBlock {grid-column:2;
+                     display:grid;
+                     grid-template-rows:repeat(4, 3.5vmax) auto;
+                     grid-template-columns:100%;
+                     color:#333333;
+                     font-family:"Gilroy SB";
+                     font-size:1.4vmax;}
+          #navBlock a {color:#333333;}
+          #empty { color:#333333;
+                     font-family:"Gilroy";
+                     font-size:1.2vmax;}
+          #orderContent {display:grid;
+                         grid-column:3;
+                         grid-template-rows:100%;
+                         grid-template-columns:100%;}
+          .orderContentForADMIN {width:130%;}
+          #rowOrder {display:grid;
+                     grid-template-rows:100%;
+                     width:100%;
+                     color:#333333;
+                     font-family:"Gilroy";
+                     font-size:1.2vmax;
+                     }
+          .rowOrderForONEORDER{grid-template-columns:7% 13% 35% 25% 1fr;
+               align-items:center;
+               height:4vmax;}
+          .rowOrderFORUSERS {grid-template-columns:4% 16% 17% 17% 15% 1fr;
+                             height:4vmax;}
+          .rowOrderFORCATEGORY {grid-template-columns:4% 30% 15% 17% 15% 1fr;
+                              height:4vmax;
+                              align-items:center;}
+          .rowOrderForSETTINGS{height:3vmax;
+               grid-template-columns:32% 45% 20% 1fr;
+               align-items:center;}
+          .rowOrderForORDERS {height:2.5vmax;
+               grid-template-columns:15% 20% 20% 25% 1fr;
+               justify-items:center;}
+          .rowOrderForADMIN{grid-template-columns:2% 7% 20% 2% 12% 2% 28% 2% 12% 1fr 1fr; 
+                           height:4vmax;
+                           align-items:center;}
+          .rowOrderForADMIN input {padding-left:3%;}
+          #curNav {text-decoration:overline; }
+          #voidOrder a {color:#333333;}
+          .headline {font-family: 'Gilroy SB';
+              color: #333333;
+              font-size: 2vmax;
+              grid-column:1/span all;
+              justify-self:center;}
+          #imgOrder {border-radius:100vmax;
+                     width:3.5vmax;
+                     height:3.5vmax;}
+          .buttonDelete, .buttonRecover {width:2.5vmax;
+                        justify-self:center;}
+          .classDeleted {border:0.15vmax solid #c5c5c5;
+                         color:#b2b0b0;}
+          .classDeleted2 {color:#b2b0b0;}
+          .classAvailable2 {color:#333333;}
+          .classAvailable {border:0.1vmax solid #333333;}
+          #buttonOK {width:80%;
+                     justify-self: center;}
+          .aDelRec {width:100%;}
+
+
+
+          #submitSet {background-color:#333333;
+               justify-self:right;
+               grid-column:2;
+               width:45%;
+               height:90%;
+               color:white;}
+
+
+               #wrapperTovar {display:grid;
+                    height:37vmax;
+                    grid-template-columns: 21% 8.5% 1.5% 8.5% 1.5% 8.5% 1.25% 1fr 21%;
+                    grid-template-rows: 18.5% 60% 4% 1fr;}
+     #noname1 {grid-row:6;
+              grid-column:1/span all;
+              color:#333333;
+              font-family:"Gilroy";
+              font-size: 1.1vmax;
+              text-align: center;}
+     #noname2 {text-align: center;
+               height:6.5vmax;
+               color:#333333;
+              font-family:"Noto Serif B";
+              font-size: 1.5vmax;}
+     #t2 {grid-row:2;
+         grid-column:2/7;
+         width:100%;
+         height:100%;}
+     #t3 {grid-row:4;
+         grid-column:2;
+         width:100%;
+         height:100%;}
+     #t4 {grid-row:4;
+         grid-column:4;
+         width:100%;
+         height:100%;}
+     #t5 {grid-row:4;
+         grid-column:6;
+         width:100%;
+         height:100%;}
+     #t1 {grid-row:1;
+         grid-column:1/span all;
+         justify-self:center;
+         align-self: center;
+         display:grid;
+         width:24.5%;
+         height:20%;
+         align-items: end;
+         grid-template-rows: 100%;
+         grid-template-columns: 11.5% 1fr 12% 1fr 15% 1fr 38% ;}
+     .slash {justify-self: center;
+             color:#333333;
+                 font-size: 0.8vmax;
+                 font-family: "Gilroy";}
+     .textSlash {color:#333333;
+                 font-size: 0.72vmax;
+                 font-family: "Gilroy";
+                text-decoration: underline;}
+     .textSlash a {color:#333333;}
+     #t6 {grid-column:8;
+          grid-row:2/span all;
+          display:grid;
+          border:0.1vmax solid #D6D6D6;}
+     #t6In {display:grid;
+          border:0.1vmax solid #D6D6D6;
+          justify-self: center;
+          align-self: center;
+          height:94%;
+          width:94%;
+          grid-template-rows: 6% 11% 8% 0.2% 6% 44% 10% 7.5% 1fr;
+          grid-template-columns: 4% 1fr 5%;}
+     #t61 {color:#333333;
+                 font-size: 1.3vmax;
+                 grid-column: 2;
+                 letter-spacing: 0.08vmax;
+                grid-row:2;
+                 font-family: "Gilroy M";}
+     #t63 {background-color:#D6D6D6;
+           height:100%;
+           grid-column: 2;
+           grid-row:4;}   
+     #t64 {color:#333333;
+         line-height:1.1vmax;
+                 font-size: 0.725vmax;
+                 grid-column: 2;
+                grid-row:6;
+                 font-family: "Gilroy";}   
+     #t65 {color:#333333;
+                 font-size: 1.3vmax;
+                 grid-column: 2;
+                grid-row:7;
+                 font-family: "Gilroy SB";} 
+     #t66 {display: grid;
+          grid-column: 2;
+          grid-row: 8;
+          grid-template-columns: 25% 6% 1fr;
+          grid-template-rows: 100%;} 
+     #t661 {background-color: #333333;
+           color:white;
+           font-size: 1vmax;
+           font-family: "Gilroy M";
+         border:none;}   
+     #t662 {background: transparent;
+           color:#333333;
+           border:0.12vmax solid #333333;
+           font-size: 1vmax;
+           grid-column: 3;
+           width:78%;
+           font-family: "Gilroy M";}    
+     #t62 {grid-row:3;
+           grid-column: 2;
+           color:#979797;
+           font-size: 0.75vmax;
+           font-family: "Gilroy";
+            display: grid;
+           grid-template-columns: 19.5% 19% 13% 1fr;
+           grid-template-rows: 100%;}
+           #lorem0 {grid-row:1;
+                   align-self:end;
+               font-size: 1.6vmax;
+               color:#333333;
+               font-family: "Gilroy SB";
+               grid-column:2;}
+.unblocked {color:red;}
+.blocked {color:green;}
+#buttonCreateJew {grid-column:8/11;
+     width:110%;
+     height:60%;
+     color:white; 
+     text-align: center;
+     line-height: 200%;
+     background-color:#333333;
+     font-size: 1.2vmax;
+     font-family: "Gilroy";}
+#buttonCreateJew a {color:white; }
+
+#createJewForm{
+     width: 35vmax;   /*45vmax, если понадобится вернуться к отдельному файлу*/
+     height: 19vmax;
+     display:grid;
+     grid-template-columns: 30% 1fr;
+     grid-template-rows: repeat(5, 1fr) 12%;}
+#createJewForm select {height:58%;
+                       align-self:center;
+                       outline:none;}
+#submitCreateJew {justify-self:end;
+                   grid-column:2;
+                 width:37%;
+                 height:107%;
+                 color:white; 
+                 background-color:#333333;}
+
+#fixedButton {position:fixed;
+              bottom:0;
+              right:0;
+              width:5vmax;
+              height:5vmax;
+              background-size: cover;
+              background-image: url("arrow.png");}
+#formSearch {display:grid;
+             grid-column:1/7;
+             grid-template-columns: 70% 5% 1fr;
+             grid-template-rows: 100%;}
+#buttonSearch {grid-column:3;}
+#formSearch input:not(#buttonSearch) {width:100%;
+                                     height:100%;}
+/* #formSort {grid-column:1/10;
+           display:grid;
+           grid-template-rows: 100%;
+           grid-template-columns:50% 20% 1fr;} */
+#formSort {display:grid;
+     grid-column:1/10;
+     grid-template-columns: 14% 25% 3% 18% 25% 2% 15%;
+     grid-template-rows: 100%;}
